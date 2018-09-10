@@ -222,9 +222,10 @@ function! s:Opener._openFile()
         call b:NERDTree.ui.toggleZoom()
     endif
 
-    if self._reuseWindow()
-        return
-    endif
+    " Don't reuse window
+    " if self._reuseWindow()
+    "     return
+    " endif
 
     call self._gotoTargetWin()
 
